@@ -1,0 +1,125 @@
+snippet ir
+	import React from 'react';
+snippet irc
+	import React, { Component } from 'react';
+snippet irh import react hooks
+	import { use$1 } from 'react';
+snippet ird
+	import ReactDOM from 'react-dom';
+snippet cdm
+	componentDidMount() {
+		${1}
+	}
+snippet cdup
+	componentDidUpdate(prevProps, prevState) {
+		${1}
+	}
+snippet cwm
+	componentWillMount() {
+		${1}
+	}
+snippet cwr
+	componentWillReceiveProps(nextProps) {
+		${1}
+	}
+snippet cwun
+	componentWillUnmount() {
+		${1}
+	}
+snippet cwu
+	componentWillUpdate(nextProps, nextState) {
+		${1}
+	}
+snippet fup
+	forceUpdate(${1:callback});
+snippet dp
+	static defaultProps = {
+		${1}: ${2},
+	}
+snippet st
+	state = {
+		${1}: ${2},
+	}
+snippet pt
+	static propTypes = {
+		${1}: React.PropTypes.${2:type},
+	}
+snippet rfc
+	const ${1:ComponentName} = (${2:props}) => {
+		return (
+			<div>
+				$1
+			</div>
+		);
+	}
+snippet rcc
+	class ${1:ClassName} extends React.Component {
+		state = {
+
+		}
+		render() {
+			return (
+				<div>
+					$1
+				</div>
+			);
+		}
+	}
+snippet rdr
+	ReactDOM.render(${1}, ${2})
+snippet ercc
+	export default class ${1:ClassName} extends React.Component {
+		render() {
+			return (
+				${0:<div />}
+			);
+		}
+	}
+snippet ctor
+	constructor() {
+		super();
+		${1}
+	}
+snippet ren
+	render() {
+		return (
+			${1:<div />}
+		);
+	}
+snippet sst
+	this.setState({
+		${1}: ${2}
+	});
+snippet scu
+	shouldComponentUpdate(nextProps, nextState) {
+		${1}
+	}
+snippet prp
+	this.props.${1}
+snippet ste 
+	this.state.${1}
+snippet uses useState
+	const [${1:state}, set${2}] = useState(${3:initialState});
+snippet usee useEffect
+	useEffect(() => {
+		${1}
+	});
+snippet userd useReducer
+	const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer});
+snippet userf useRef
+	const ${1:refContainer} = useRef(${2:initialValue});
+snippet usect useContext
+	const ${1:value} = useContext(${2:MyContext});
+snippet usecb useCallback
+	const ${1:memoizedCallback} = useCallback(
+	() => {
+		${2}(${3})
+	},
+	[$3]
+	);
+snippet usem useMemo
+	const ${1:memoizedCallback} = useMemo(() => ${2}(${3}), [$3]);
+snippet usei useImperativeHandle
+	useImperativeHandle(${1:ref}, ${2:createHandle});
+snippet used useDebugValue
+	useDebugValue(${1:value});
