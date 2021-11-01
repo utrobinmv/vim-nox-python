@@ -78,7 +78,7 @@ else
 endif
 else
 " терминал?
-"  colorscheme myterm
+  colorscheme murphy
 endif
 
 tab sball
@@ -123,6 +123,7 @@ let g:snippets_dir = "~/.vim/vim-snippets/snippets"
 " настройки Vim-Airline
 set laststatus=2
 let g:airline_theme='badwolf'
+"let g:airline_theme='light'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
